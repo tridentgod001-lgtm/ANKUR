@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIELIT Gorakhpur</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family:'Poppins', sans-serif;
+            background:#eef2f8;
+        }
+
+        /* HEADER */
+        header{
+            background:linear-gradient(135deg,#002c91,#005eff);
+            color:white;
+            text-align:center;
+            padding:50px 20px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.3);
+        }
+        header h1{
+            font-size:48px;
+            margin:0;
+            font-weight:700;
+            animation:fadeIn 1.2s ease-out;
+        }
+        header p{
+            margin-top:10px;
+            font-size:18px;
+        }
+
+        /* NAVBAR */
+        nav{
+            background:#001a66;
+            padding:15px;
+            text-align:center;
+            position:sticky;
+            top:0;
+            z-index:999;
+            box-shadow:0 3px 10px rgba(0,0,0,0.2);
+        }
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 25px;
+            font-size:18px;
+            font-weight:600;
+            transition:0.3s;
+        }
+        nav a:hover{
+            color:#00ccff;
+            text-shadow:0 0 8px #00ccff;
+        }
+
+        /* HERO SECTION */
+        .hero{
+            background:url('nie.jpeg') center/cover no-repeat;
+            height:380px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size:46px;
+            color:white;
+            font-weight:700;
+            text-shadow:4px 4px 18px black;
+            animation:fadeIn 1.6s;
+        }
+
+        @keyframes fadeIn{
+            from{opacity:0; transform:scale(1.06);}
+            to{opacity:1; transform:scale(1);}
+        }
+
+        /* MAIN CONTENT */
+        .container{
+            max-width:1200px;
+            margin:auto;
+            padding:60px 25px;
+        }
+        .card{
+            background:white;
+            padding:30px;
+            margin:25px 0;
+            border-radius:15px;
+            border-left:6px solid #005eff;
+            box-shadow:0 4px 14px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+        .card:hover{
+            transform:translateY(-5px);
+            box-shadow:0 6px 18px rgba(0,0,0,0.2);
+        }
+        .card h2{
+            margin-top:0;
+            font-size:28px;
+            color:#003399;
+        }
+        ul li{
+            margin:10px 0;
+            font-size:17px;
+        }
+
+        /* SOCIAL ICONS */
+        .social-icons{
+            display:flex;
+            gap:22px;
+            margin-top:15px;
+        }
+        .social-icons img{
+            width:42px;
+            height:42px;
+            transition:0.3s;
+        }
+        .social-icons img:hover{
+            transform:scale(1.15);
+        }
+
+        /* FOOTER */
+        footer{
+            background:linear-gradient(135deg,#003399,#005eff);
+            color:white;
+            text-align:center;
+            padding:22px;
+            margin-top:30px;
+            font-size:16px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>NIELIT GORAKHPUR</h1>
+    <p>National Institute of Electronics & Information Technology</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#faculty">Faculty</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    Welcome to NIELIT Gorakhpur
+</div>
+
+<!-- CONTENT WRAPPER -->
+<div class="container">
+
+    <!-- ABOUT -->
+    <div class="card" id="about">
+        <h2>About NIELIT</h2>
+        <p>NIELIT is a premier institute under the Ministry of Electronics & IT, Government of India. It provides world-class training in computer science, IT, electronics, software development, and related technology fields.</p>
+    </div>
+
+    <!-- COURSES -->
+    <div class="card" id="courses">
+        <h2>Courses Offered</h2>
+        <ul>
+            <li>O Level – Foundation Course in Computer Application</li>
+            <li>A Level – Advanced Diploma in Computer Application</li>
+            <li>Programming in C, C++, Java, Python</li>
+            <li>Web Designing & Development</li>
+            <li>Basic & Advanced Digital Marketing</li>
+            <li>IoT, Robotics & AI Introduction</li>
+        </ul>
+    </div>
+
+    <!-- FACULTY -->
+    <div class="card" id="faculty">
+        <h2>Our Faculty</h2>
+        <p>Our faculty team consists of certified trainers, IT professionals, engineers, and experienced educators who help students gain real-world technical skills.</p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="card" id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Email:</strong> dir-gorakhpur[at]nielit[dot]gov[dot]in</p>
+        <p><strong>Phone:</strong> +91 8317093894</p>
+        <p><strong>Address:</strong>Deoria Road, Gorakhpur Uttar Pradesh - 273010.</p>
+
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/nielitindia/#" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/c/NIELITIndia" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/NIELITIndia" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+            </a>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 NIELIT Gorakhpur | All Rights Reserved
+</footer>
+
+</body>
+</html>
